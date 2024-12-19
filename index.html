@@ -1,9 +1,11 @@
-<!DOCTYPE html>
-<html lang="he">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>תמיכה מרחוק - Remote Support</title>
+    
+    <!-- הוספת אייקון -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
     <style>
         /* עיצוב בסיסי */
         body {
@@ -19,17 +21,19 @@
             background-color: #e5e5e5; /* צבע רקע בהיר */
             text-align: center;
             padding: 40px;
+            border-bottom: 4px solid #4CAF50; /* גבול תחתון בין החלקים */
         }
 
         header h1 {
             font-size: 3em;
-            color: #4CAF50; /* צבע ירוק */
+            color: #5308b3; /* צבע סגול */
             margin: 0;
         }
 
         header p {
             font-size: 1.2em;
-            color: #666;
+            color: #fd0615; /* צבע אדום */
+            font-weight: bold;
         }
 
         /* תפריט ניווט */
@@ -77,6 +81,7 @@
             margin: 0 auto 30px;
         }
 
+        /* כפתורים */
         .main-section .button {
             display: inline-block;
             background-color: #4CAF50;
@@ -86,32 +91,20 @@
             border-radius: 5px;
             font-size: 1.2em;
             margin-top: 20px;
+            transition: background-color 0.3s ease;
         }
 
         .main-section .button:hover {
             background-color: #45a049;
         }
 
-        /* תמונות */
-        .image-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 40px;
-        }
-
-        .image-container img {
-            width: 300px;
-            margin: 0 15px;
-            border-radius: 10px;
-            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-        }
-
         /* Footer */
         footer {
             background-color: #f1f1f1;
-            padding: 30px 0;
+            padding: 30px 20px;
             text-align: center;
             margin-top: 50px;
+            border-top: 4px solid #4CAF50; /* גבול עליון */
         }
 
         footer p {
@@ -121,29 +114,3 @@
 
     </style>
   </head>
-  <body>
-    <!-- כותרת עליונה -->
-    <header>
-      <h1><span style="color: #5308b3;"><b>שליטה מרחוק</b></span></h1>
-      <p><b> <span style="color: #fd0615;">אפשרו גישה למחשב שלכם רק לחברת
-            התמיכה או לאנשים שאתם סומכים עליהם</span></b></p>
-    </header>
-    <!-- תפריט ניווט -->&nbsp;
-    <!-- קטע תוכן ראשי -->
-    <section id="home" class="main-section"><a href="mailto:support@example.com"
-
-        class="button">Any Desk - 1</a><br>
-      <a href="mailto:support@example.com" class="button">TeamViewer - 2</a><br>
-      <a href="mailto:support@example.com" class="button">Mac Anydesk - 3</a><br>
-      <a href="mailto:support@example.com" class="button">iPhone Anydesk - 4</a><br>
-      <a href="mailto:support@example.com" class="button">Android Anydesk - 5</a><br>
-      <a class="elementor-button elementor-button-link elementor-size-sm" href="https://play.google.com/store/apps/details?id=com.anydesk.anydeskandroid"></a>
-    </section>
-    <!-- שירותים --><!-- תחתית -->
-    <footer>
-      <p style="background-color: white;"><span style="color: rgb(51, 51, 51); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">.האתר
-          ניתן כשירות לציבור, אין בעלי האתר אחראים לכל פעולה בלתי חוקית שתיווצר
-          כתוצאה מהשימוש באתר</span></p>
-    </footer>
-  </body>
-</html>
