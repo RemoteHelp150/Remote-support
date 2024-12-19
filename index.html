@@ -5,79 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>תמיכה מרחוק</title>
     <style>
-        /* עיצוב בסיסי של האתר */
+        /* הגדרות עיצוב בסיסיות */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
             direction: rtl;
-            color: #333;
         }
 
-        /* עיצוב הכותרת העליונה */
+        /* כותרת עליונה */
         header {
-            background-color: #007bff;
+            background-color: #111;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 40px 20px;
         }
 
         header h1 {
+            font-size: 40px;
             margin: 0;
-            font-size: 36px;
         }
 
         header p {
+            font-size: 20px;
             margin-top: 10px;
+        }
+
+        /* תפריט ניווט */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: right;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
             font-size: 18px;
         }
 
-        /* עיצוב התוכן הראשי */
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        /* תוכן האתר */
         .container {
             width: 80%;
             margin: 0 auto;
-            padding: 20px;
+            padding: 40px 0;
         }
 
-        h2 {
-            color: #007bff;
-        }
-
-        /* בלוקים של תוכן */
-        .content-block {
+        .section {
             background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #333;
+            font-size: 30px;
             margin-bottom: 20px;
         }
 
-        /* כפתורים */
+        .section p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        /* כפתור יצירת קשר */
         .btn {
+            display: inline-block;
             background-color: #28a745;
             color: white;
-            padding: 10px 20px;
-            text-decoration: none;
+            padding: 12px 30px;
             border-radius: 5px;
-            display: inline-block;
-            margin-top: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            margin-top: 20px;
         }
 
         .btn:hover {
             background-color: #218838;
         }
 
-        /* עיצוב כותרת תחתונה */
+        /* כותרת תחתונה */
         footer {
-            background-color: #333;
+            background-color: #111;
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 20px;
             position: fixed;
-            width: 100%;
             bottom: 0;
+            width: 100%;
         }
+
     </style>
 </head>
 <body>
@@ -85,36 +113,42 @@
     <!-- כותרת עליונה -->
     <header>
         <h1>תמיכה מרחוק</h1>
-        <p>שירות תמיכה טכנית מרחוק מכל מקום ובכל זמן</p>
+        <p>פתרונות טכנולוגיים מתקדמים בכל מקום ובכל זמן</p>
     </header>
+
+    <!-- תפריט ניווט -->
+    <nav>
+        <a href="#services">שירותים</a>
+        <a href="#about">אודות</a>
+        <a href="#contact">צור קשר</a>
+    </nav>
 
     <!-- תוכן ראשי -->
     <div class="container">
-        <!-- בלוק של תוכן 1 -->
-        <div class="content-block">
-            <h2>מה זה תמיכה מרחוק?</h2>
-            <p>שירות התמיכה המרוחק שלנו מאפשר לך לקבל עזרה טכנית ישירות מהמחשב שלך, מבלי לצאת מהבית. צוות המומחים שלנו יוכל להתחבר למחשב שלך ולסייע לך בפתרון בעיות טכנולוגיות, בכל שעה ובכל מקום.</p>
+        <!-- שירותים -->
+        <div class="section" id="services">
+            <h2>שירותי תמיכה מרחוק</h2>
+            <p>אנו מספקים תמיכה טכנית מקצועית וממוקדת, המאפשרת לך לפתור בעיות טכנולוגיות מכל מקום ובכל זמן. צוות התמיכה שלנו זמין עבורך 24/7.</p>
+            <a href="#contact" class="btn">צור קשר</a>
         </div>
 
-        <!-- בלוק של תוכן 2 -->
-        <div class="content-block">
-            <h2>איך זה עובד?</h2>
-            <p>1. פנה אלינו דרך טלפון, אימייל או צ'אט.  
-            <br>2. צוות התמיכה שלנו יתחבר למחשב שלך באמצעות תוכנה מאובטחת.
-            <br>3. אנחנו נטפל בבעיה שלך בזמן אמת, מכל מקום בעולם.</p>
+        <!-- אודות -->
+        <div class="section" id="about">
+            <h2>אודותנו</h2>
+            <p>אנחנו צוות מקצועי בתחום התמיכה הטכנית, עם ניסיון עשיר במתן פתרונות מרחוק למגוון בעיות טכנולוגיות. השירותים שלנו מיועדים לכלל המשתמשים, החל מעסקים ועד לאנשים פרטיים.</p>
         </div>
 
-        <!-- בלוק של תוכן 3 -->
-        <div class="content-block">
-            <h2>צור קשר עם צוות התמיכה</h2>
-            <p>לשאלות או בקשות תמיכה, ניתן לפנות אלינו ישירות דרך כפתור ה-"צור קשר" למטה.</p>
-            <a href="mailto:support@remotesupport.com" class="btn">שלח אימייל לתמיכה</a>
+        <!-- צור קשר -->
+        <div class="section" id="contact">
+            <h2>צור קשר</h2>
+            <p>נשמח לשמוע ממך ולספק לך עזרה טכנית מיידית. ניתן ליצור קשר דרך הטופס הבא או לשלוח לנו אימייל ישירות.</p>
+            <a href="mailto:support@remotesupport.com" class="btn">שלח לנו אימייל</a>
         </div>
     </div>
 
     <!-- כותרת תחתונה -->
     <footer>
-        <p>&copy; 2024 תמיכה מרחוק. כל הזכויות שמורות.</p>
+        <p>&copy; 2024 תמיכה מרחוק | כל הזכויות שמורות</p>
     </footer>
 
 </body>
