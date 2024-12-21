@@ -167,7 +167,7 @@
         document.body.appendChild(googleTranslateElement);
 
         new google.translate.TranslateElement({
-          pageLanguage: 'en',
+          pageLanguage: 'he',
           includedLanguages: 'he,ru,en',
           layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
           autoDisplay: false
@@ -213,32 +213,3 @@
     <nav>
       <!-- כאן תוכל להוסיף לינקים אחרים לתפריט -->
     </nav>
-
-    <!-- קטע תוכן ראשי -->
-    <section id="home" class="main-section">
-      <a href="https://download.anydesk.com/AnyDesk.exe" class="button">Any Desk - 1</a><br>
-      <a href="https://www.teamviewer.com/en/download/windows/" class="button">TeamViewer - 2</a><br>
-      <a href="https://anydesk.com/en/downloads/thank-you?dv=mac_dmg" class="button">Mac Anydesk - 3</a><br>
-      <a href="https://apps.apple.com/us/app/anydesk/id1176131273" class="button">iPhone Anydesk - 4</a><br>
-      <a href="https://play.google.com/store/apps/details?id=com.anydesk.anydeskandroid" class="button">Android Anydesk - 5</a><br>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <p><span style="color: #FFFFFF;"><b>The website is provided as a service to the public. The site owners are not responsible for any illegal actions resulting from the use of the website.</b></span></p>
-    </footer>
-
-    <!-- הוספת תוסף Google Translate -->
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-          pageLanguage: 'en',
-          includedLanguages: 'he,ru,en',
-          layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-          autoDisplay: false
-        }, 'google_translate_element');
-      }
-    </script>
-  </body>
-</html>
