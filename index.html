@@ -1,215 +1,168 @@
-<!DOCTYPE html>
-<html lang="he">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+Skip to content
+Navigation Menu
+RemoteHelp150
+Remote-support
+
+Type / to search
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+Commit b48edc1
+Preview
+Give feedback
+RemoteHelp150
+RemoteHelp150
+authored
+1 hour ago
+·
+·
+Verified
+Update index.html
+main
+1 parent 
+c9132f7
+ commit 
+b48edc1
+File tree
+Filter files…
+index.html
+1 file changed
++26
+-8
+lines changed
+Search within code
+ 
+‎index.html
++26
+-8
+Original file line number	Diff line number	Diff line change
+@@ -6,28 +6,31 @@
     <title>Remote Support</title>
-    <link rel="icon" href="https://i.imagesup.co/images2/ae4fd47df1c22b83df8d075c8bc4be72a584faf7.png" type="image/png">
+    <!-- הוספת אייקון האתר -->
+    <link rel="icon" href="https://i.imagesup.co/images2/ae4fd47df1c22b83df8d075c8bc4be72a584faf7.png"
+      type="image/png">
     <style>
-      /* עיצוב בסיסי */
-      body {
-        font-family: 'Arial', sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #2F353E;
-        color: #333;
-        border-left: 5px solid #3498db;
-        border-right: 5px solid #3498db;
-      }
+        /* עיצוב בסיסי */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1; /* רקע בהיר */
+            background-color: #2F353E; /* רקע בצבע שהוזן */
+            color: #333;
+            border-left: 5px solid #3498db; /* קו שמאלי בצבע כחול */
+            border-right: 5px solid #3498db; /* קו ימני בצבע כחול */
+        }
 
-      header {
-        background-color: #2F353E;
-        text-align: center;
-        padding: 40px;
-        border-bottom: 4px solid #3498db;
-      }
+        /* כותרת עליונה */
+        header {
+            background-color: #e5e5e5; /* צבע רקע בהיר */
+            background-color: #2F353E; /* עדכון צבע הרקע לאפור כהה יותר */
+            text-align: center;
+            padding: 40px;
+            border-bottom: 4px solid #3498db; /* גבול תחתון בצבע כחול */
+        }
 
-      header h1 {
-        font-size: 3em;
-        color: #FFFFFF;
-        margin: 0;
-      }
+        header h1 {
+            font-size: 3em;
+            color: #000000; /* צבע שחור */
+            color: #FFFFFF; /* צבע לבן לכותרת */
+            margin: 0;
+        }
 
-      header p {
-        font-size: 1.2em;
-        color: #e74c3c;
-        font-weight: bold;
-      }
+@@ -41,15 +44,15 @@
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffffff;
+            background-color: #2F353E; /* עדכון צבע הרקע לאפור כהה יותר */
+            padding: 15px 0;
+            border-top: 2px solid #3498db;
+            border-bottom: 2px solid #3498db;
+        }
 
-      /* תפריט ניווט */
-      nav {
-        display: flex;
-        justify-content: center;
-        background-color: #2F353E;
-        padding: 15px 0;
-        border-top: 2px solid #3498db;
-        border-bottom: 2px solid #3498db;
-      }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            color: #FFFFFF; /* צבע לבן לקישורים בתפריט */
+            padding: 12px 25px;
+            font-size: 1.1em;
+            text-align: center;
+@@ -101,15 +104,15 @@
 
-      nav a {
-        text-decoration: none;
-        color: #FFFFFF;
-        padding: 12px 25px;
-        font-size: 1.1em;
-        text-align: center;
-      }
+        /* Footer */
+        footer {
+            background-color: #f1f1f1;
+            background-color: #2F353E; /* עדכון צבע הרקע לאפור כהה יותר */
+            padding: 30px 20px;
+            text-align: center;
+            margin-top: 50px;
+            border-top: 4px solid #3498db; /* גבול עליון בצבע כחול */
+        }
 
-      nav a:hover {
-        background-color: #3498db;
-        color: white;
-        border-radius: 5px;
-      }
+        footer p {
+            color: #777;
+            color: #FFFFFF; /* צבע לבן לפוטר */
+            font-size: 1em;
+        }
 
-      /* קטע תוכן ראשי */
-      .main-section {
-        background-color: #ffffff;
-        padding: 50px 20px;
-        text-align: center;
-      }
-
-      .main-section h2 {
-        font-size: 2.5em;
-        color: #3498db;
-        margin-bottom: 20px;
-      }
-
-      .main-section p {
-        font-size: 1.2em;
-        line-height: 1.6;
-        color: #555;
-        max-width: 900px;
-        margin: 0 auto 30px;
-      }
-
-      /* כפתורים */
-      .main-section .button {
-        display: inline-block;
-        background-color: #3498db;
-        color: white;
-        padding: 15px 30px;
-        text-decoration: none;
-        border-radius: 5px;
-        font-size: 1.2em;
-        margin-top: 20px;
-        transition: background-color 0.3s ease;
-      }
-
-      .main-section .button:hover {
-        background-color: #2980b9;
-      }
-
-      /* Footer */
-      footer {
-        background-color: #2F353E;
-        padding: 30px 20px;
-        text-align: center;
-        margin-top: 50px;
-        border-top: 4px solid #3498db;
-      }
-
-      footer p {
-        color: #FFFFFF;
-        font-size: 1em;
-      }
-
-      .safety-buttons {
-        margin-top: 20px;
-      }
-
-      .safety-buttons .button {
-        background-color: #3498db;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        margin: 10px;
-        font-size: 16px;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-
-      .safety-buttons .button:hover {
-        background-color: #2980b9;
-      }
-
-      /* עיצוב הכפתורים בצד שמאל למעלה */
-      .language-buttons {
-        position: fixed;
-        top: 10px;
-        left: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        z-index: 1000;
-      }
-
-      .language-buttons button {
-        background-color: #3498db;
-        color: white;
-        border: none;
-        padding: 10px 15px;
-        font-size: 16px;
-        border-radius: 5px;
-        margin: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-      }
-
-      .language-buttons button:hover {
-        background-color: #2980b9;
-      }
-
-    </style>
-    <script type="text/javascript">
-      // פונקציה להחלפת השפה באמצעות Google Translate
-      function translateLanguage(languageCode) {
-        var googleTranslateElement = document.createElement('div');
-        googleTranslateElement.id = 'google_translate_element';
-        document.body.appendChild(googleTranslateElement);
-
-        new google.translate.TranslateElement({
-          pageLanguage: 'he',
-          includedLanguages: 'he,ru,en',
-          layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-          autoDisplay: false
-        }, 'google_translate_element');
-
-        setTimeout(function() {
-          var select = document.querySelector('select.goog-te-combo');
-          if (select) {
-            select.value = languageCode; // בחר את השפה שברצונך לעבור אליה
-            select.dispatchEvent(new Event('change')); // התחל את תהליך התרגום
-          }
-        }, 500);
-      }
-    </script>
-  </head>
+@@ -137,26 +140,39 @@
   <body>
-    <!-- כפתורים לשינוי שפה בצד שמאל למעלה -->
-    <div class="language-buttons">
-      <button onclick="translateLanguage('he')">עברית (He)</button>
-      <button onclick="translateLanguage('ru')">Русский (Ru)</button>
-    </div>
-
     <!-- כותרת עליונה -->
     <header>
-      <h1><img src="https://i.imagesup.co/images2/12f3a4bf8b6f3338dd3694c486f210f36f948ffc.jpg" style="width: 161px; height: 133px;"></h1>
+      <h1><img src="https://i.imagesup.co/images2/12f3a4bf8b6f3338dd3694c486f210f36f948ffc.jpg"
+          style="width: 161px; height: 133px;"></h1>
       <h1><b>Remote Support</b></h1>
-      <p>To ensure your safety, allow access to your computer only to the support company or to people you trust.</p>
-      <div class="safety-buttons">
-        <a href="https://www.google.com/chrome/"><button class="button">Chrome Download</button></a>
-        <a href="https://www.mozilla.org/en-US/firefox/new/"><button class="button">Firefox Download</button></a>
-        <a href="https://www.opera.com/"><button class="button">Opera Download</button></a>
-        <a href="https://get.adobe.com/reader/"><button class="button">Adobe PDF Download</button></a>
-      </div>
-      <div class="safety-buttons">
-        <a href="https://apps.microsoft.com/detail/9p6pmztm93lr?rtc=1&amp;hl=he-IL&amp;gl=IL"><button class="button">Microsoft Defender Download</button></a>
-        <a href="https://oag.ca.gov/privacy/facts/online-privacy/protect-your-computer"><button class="button">Tips to Ensure Your PC Safety</button></a>
-        <a href="https://support.microsoft.com/en-us/windows"><button class="button">Windows Help &amp; learning</button></a>
-        <a href="https://www.microsoft.com/en-us/microsoft-365/download-office"><button class="button">Office 365 Download</button></a>
-      </div>
+      <p></p>
+      <p>To ensure your safety, allow access to your computer only to the
+        support company or to people you trust.</p>
+      <div class="safety-buttons"> <a href="https://www.google.com/chrome/"><button
+            class="button">Chrome Download</button></a> <a href="https://www.mozilla.org/en-US/firefox/new/"><button
+            class="button">Firefox Download</button></a> <a href="https://www.opera.com/"><button
+            class="button">Opera Download</button></a> <a href="https://get.adobe.com/reader/"><button
+            class="button">Adobe PDF Download</button></a> </div>
+      <!-- הכפתורים החדשים שמתחת לכפתורי ההורדה הקיימים -->
+      <div class="safety-buttons"> <a href="https://apps.microsoft.com/detail/9p6pmztm93lr?rtc=1&amp;hl=he-IL&amp;gl=IL"><button
+            class="button">Microsoft Defender Download</button></a> <a href="https://oag.ca.gov/privacy/facts/online-privacy/protect-your-computer"><button
+            class="button">Tips to Ensure Your PC Safety</button></a> <a href="https://support.microsoft.com/en-us/windows"><button
+            class="button">Windows Help &amp; learning</button></a> <a href="https://www.microsoft.com/en-us/microsoft-365/download-office"><button
+            class="button">Office 365 Download</button></a> </div>
     </header>
-
     <!-- תפריט ניווט -->
     <nav>
-      <!-- כאן תוכל להוסיף לינקים אחרים לתפריט -->
-    </nav>
+      <!-- כאן תוכל להוסיף לינקים אחרים לתפריט --> </nav>
+    <!-- קטע תוכן ראשי -->
+    <section id="home" class="main-section"> <a href="https://download.anydesk.com/AnyDesk.exe"
+        class="button">Any Desk - 1</a><br>
+      <a href="https://www.teamviewer.com/en/download/windows/" class="button">TeamViewer
+        - 2</a><br>
+@@ -165,13 +181,15 @@ <h1><b>Remote Support</b></h1>
+      <a href="https://apps.apple.com/us/app/anydesk/id1176131273" class="button">iPhone
+        Anydesk - 4</a><br>
+      <a href="https://play.google.com/store/apps/details?id=com.anydesk.anydeskandroid"
+        class="button">Android Anydesk - 5</a><br>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <p><span style="color: #2c382c;"><b>The website is provided as a service
+      <p><span style="color: #FFFFFF;"><b>The website is provided as a service
+            to the public. The site owners are not responsible for any illegal
+            actions resulting from the use of the website.</b></span></p>
+    </footer>
+    
+  </body>
+</html>
+0 commit comments
+Comments
+0
+ (0)
+Comment
+You're receiving notifications because you're subscribed to this thread.
+
+R12 selected.
