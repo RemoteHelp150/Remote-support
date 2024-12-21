@@ -159,22 +159,35 @@
       }
 
     </style>
-    <script>
-      // פונקציה לשנות את השפה של האתר
-      function changeLanguage(language) {
-        if (language === 'he') {
-          window.location.href = window.location.href.split('?')[0] + '?lang=he';
-        } else if (language === 'ru') {
-          window.location.href = window.location.href.split('?')[0] + '?lang=ru';
-        }
+    <script type="text/javascript">
+      // פונקציה להחלפת השפה באמצעות Google Translate
+      function translateLanguage(languageCode) {
+        var googleTranslateElement = document.createElement('div');
+        googleTranslateElement.id = 'google_translate_element';
+        document.body.appendChild(googleTranslateElement);
+
+        new google.translate.TranslateElement({
+          pageLanguage: 'en',
+          includedLanguages: 'he,ru,en',
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+          autoDisplay: false
+        }, 'google_translate_element');
+
+        setTimeout(function() {
+          var select = document.querySelector('select.goog-te-combo');
+          if (select) {
+            select.value = languageCode; // בחר את השפה שברצונך לעבור אליה
+            select.dispatchEvent(new Event('change')); // התחל את תהליך התרגום
+          }
+        }, 500);
       }
     </script>
   </head>
   <body>
     <!-- כפתורים לשינוי שפה בצד שמאל למעלה -->
     <div class="language-buttons">
-      <button onclick="changeLanguage('he')">He</button>
-      <button onclick="changeLanguage('ru')">Ru</button>
+      <button onclick="translateLanguage('he')">עברית (He)</button>
+      <button onclick="translateLanguage('ru')">Русский (Ru)</button>
     </div>
 
     <!-- כותרת עליונה -->
@@ -214,5 +227,18 @@
     <footer>
       <p><span style="color: #FFFFFF;"><b>The website is provided as a service to the public. The site owners are not responsible for any illegal actions resulting from the use of the website.</b></span></p>
     </footer>
+
+    <!-- הוספת תוסף Google Translate -->
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+          pageLanguage: 'en',
+          includedLanguages: 'he,ru,en',
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+          autoDisplay: false
+        }, 'google_translate_element');
+      }
+    </script>
   </body>
 </html>
