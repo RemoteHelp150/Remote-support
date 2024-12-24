@@ -123,8 +123,8 @@
             position: fixed;
             left: 0;
             top: 150px;
-            width: 250px;
-            height: 600px;
+            width: 156px; /* הגדלה ב-25% */
+            height: 375px; /* הגדלה ב-25% */
             box-sizing: border-box;
         }
 
@@ -133,9 +133,15 @@
             position: fixed;
             right: 0;
             top: 150px;
-            width: 250px;
-            height: 600px;
+            width: 156px; /* הגדלה ב-25% */
+            height: 375px; /* הגדלה ב-25% */
             box-sizing: border-box;
+        }
+
+        /* תמונות בפרסומות צד */
+        .advertisement-left img, .advertisement-right img {
+            width: 100%;
+            height: 100%;
         }
     </style>
   </head>
@@ -186,18 +192,15 @@
 
         style="width: 757px; height: 168px;"></div>
     <!-- פרסומת בצד שמאל -->
-    <div class="advertisement advertisement-left"><img src="https://i.imagesup.co/images2/e98f746ddb017e7759eea20ddf11ca524ff990fd.gif"
-
-        style="width: 206px; height: 565px;"></div>
+    <div class="advertisement advertisement-left"><img src="https://i.imagesup.co/images2/e98f746ddb017e7759eea20ddf11ca524ff990fd.gif"></div>
     <!-- פרסומת בצד ימין -->
-    <div class="advertisement advertisement-right"><img src="https://i.imagesup.co/images2/e98f746ddb017e7759eea20ddf11ca524ff990fd.gif"
-
-        style="width: 206px; height: 565px;"></div>
+    <div class="advertisement advertisement-right"><img src="https://i.imagesup.co/images2/e98f746ddb017e7759eea20ddf11ca524ff990fd.gif"></div>
     <!-- Footer -->
     <footer>
       <p><b>The website is provided as a service to the public. The site owners
           are not responsible for any illegal actions resulting from the use of
           the website.</b></p>
     </footer>
+    
   </body>
 </html>
