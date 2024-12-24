@@ -63,12 +63,11 @@
         .main-section {
             background-color: #ffffff;
             padding: 50px 20px;
-            text-align: left;
+            text-align: center;
             margin: 20px auto;
             max-width: 800px;
             border-left: 5px solid #3498db;
             border-right: 5px solid #3498db;
-            color: #333;
         }
 
         .main-section a.button {
@@ -124,8 +123,8 @@
             position: fixed;
             left: 0;
             top: 150px;
-            width: 250px;
-            height: 600px;
+            width: 156px; /* הגדלה ב-25% */
+            height: 375px; /* הגדלה ב-25% */
             box-sizing: border-box;
         }
 
@@ -134,18 +133,24 @@
             position: fixed;
             right: 0;
             top: 150px;
-            width: 250px;
-            height: 600px;
+            width: 156px; /* הגדלה ב-25% */
+            height: 375px; /* הגדלה ב-25% */
             box-sizing: border-box;
+        }
+
+        /* תמונות בפרסומות צד */
+        .advertisement-left img, .advertisement-right img {
+            width: 100%;
+            height: 100%;
         }
     </style>
   </head>
   <body>
     <!-- כותרת עליונה -->
     <header>
-      <h1><img src="https://i.imagesup.co/images2/12f3a4bf8b6f3338dd3694c486f210f36f948ffc.jpg"
+      <h1><a href="remote150.com"><img src="https://i.imagesup.co/images2/12f3a4bf8b6f3338dd3694c486f210f36f948ffc.jpg"
 
-          style="width: 161px; height: 133px;"></h1>
+            style="width: 161px; height: 133px;"></a></h1>
       <h1><b>Remote Support</b></h1>
       <p>To ensure your safety, allow access to your computer only to the
         support company or to people you trust.</p>
@@ -165,74 +170,83 @@
           class="button">Office 365 Download</a> </div>
     </header>
     <!-- פרסומת למטה -->
-    <div class="advertisement advertisement-bottom"> <img src="https://i.imagesup.co/images2/b6cce063a5eb1152af78c8da06c5891eca1b313f.gif"
+    <div class="advertisement advertisement-bottom"><img src="https://i.imagesup.co/images2/b6cce063a5eb1152af78c8da06c5891eca1b313f.gif"
 
-        style="width: 570px; height: 160px;"> </div>
+        style="width: 570px; height: 160px;"></div>
     <!-- קטע תוכן ראשי -->
     <section id="home" class="main-section">
-      <h2>Tech Pro Tips: Essential Advice for Keeping Your Computer Safe</h2>
-      <h3>General Computer Security Tips</h3>
-      <ul>
-        <li><strong>Install a Reliable Antivirus:</strong> Always keep it
-          updated for the latest virus definitions.</li>
-        <li><strong>Enable Automatic Updates:</strong> Ensure your operating
-          system and applications are patched against vulnerabilities.</li>
-        <li><strong>Use Strong Passwords:</strong> Combine upper and lowercase
-          letters, numbers, and special characters. Avoid common words or
-          personal information.</li>
-        <li><strong>Enable Two-Factor Authentication:</strong> Add an extra
-          layer of security for sensitive accounts.</li>
-        <li><strong>Don't Click on Suspicious Links:</strong> Always verify the
-          source before clicking links in emails or messages.</li>
+      <h2 style="color: rgb(51, 51, 51); font-family: Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">Tech
+        Pro Tips: Essential Advice for Keeping Your Computer Safe</h2>
+      <h3 style="color: rgb(51, 51, 51); font-family: Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">General
+        Computer Security Tips</h3>
+      <ul style="color: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+        <li><strong>Install a Reliable Antivirus:</strong><span>&nbsp;</span>Always
+          keep it updated for the latest virus definitions.</li>
+        <li><strong>Enable Automatic Updates:</strong><span>&nbsp;</span>Ensure
+          your operating system and applications are patched against
+          vulnerabilities.</li>
+        <li><strong>Use Strong Passwords:</strong><span>&nbsp;</span>Combine
+          upper and lowercase letters, numbers, and special characters. Avoid
+          common words or personal information.</li>
+        <li><strong>Enable Two-Factor Authentication:</strong><span>&nbsp;</span>Add
+          an extra layer of security for sensitive accounts.</li>
+        <li><strong>Don't Click on Suspicious Links:</strong><span>&nbsp;</span>Always
+          verify the source before clicking links in emails or messages.</li>
       </ul>
-      <h3>Protecting Your Data</h3>
-      <ul>
-        <li><strong>Regular Backups:</strong> Use external hard drives or cloud
-          services to back up important files weekly.</li>
-        <li><strong>Encrypt Sensitive Files:</strong> Use tools like BitLocker
-          (Windows) or FileVault (Mac) to secure private data.</li>
-        <li><strong>Avoid USB Drives from Unknown Sources:</strong> They might
-          contain malicious software.</li>
-        <li><strong>Organize Your Files:</strong> This makes it easier to
-          identify if something has gone missing or been tampered with.</li>
+      <h3 style="color: rgb(51, 51, 51); font-family: Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">Protecting
+        Your Data</h3>
+      <ul style="color: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+        <li><strong>Regular Backups:</strong><span>&nbsp;</span>Use external
+          hard drives or cloud services to back up important files weekly.</li>
+        <li><strong>Encrypt Sensitive Files:</strong><span>&nbsp;</span>Use
+          tools like BitLocker (Windows) or FileVault (Mac) to secure private
+          data.</li>
+        <li><strong>Avoid USB Drives from Unknown Sources:</strong><span>&nbsp;</span>They
+          might contain malicious software.</li>
+        <li><strong>Organize Your Files:</strong><span>&nbsp;</span>This makes
+          it easier to identify if something has gone missing or been tampered
+          with.</li>
       </ul>
-      <h3>Internet Safety</h3>
-      <ul>
-        <li><strong>Use a Secure Browser:</strong> Choose browsers with built-in
-          privacy features like Firefox or Brave.</li>
-        <li><strong>Install Ad Blockers:</strong> Prevent harmful ads that can
-          deliver malware.</li>
-        <li><strong>Avoid Public Wi-Fi for Sensitive Activities:</strong> Use a
-          VPN if you must connect.</li>
-        <li><strong>Verify Website Authenticity:</strong> Look for HTTPS and
-          check for typos in URLs.</li>
-        <li><strong>Use Private Browsing Modes:</strong> Reduce your online
-          footprint.</li>
+      <h3 style="color: rgb(51, 51, 51); font-family: Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">Internet
+        Safety</h3>
+      <ul style="color: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+        <li><strong>Use a Secure Browser:</strong><span>&nbsp;</span>Choose
+          browsers with built-in privacy features like Firefox or Brave.</li>
+        <li><strong>Install Ad Blockers:</strong><span>&nbsp;</span>Prevent
+          harmful ads that can deliver malware.</li>
+        <li><strong>Avoid Public Wi-Fi for Sensitive Activities:</strong><span>&nbsp;</span>Use
+          a VPN if you must connect.</li>
+        <li><strong>Verify Website Authenticity:</strong><span>&nbsp;</span>Look
+          for HTTPS and check for typos in URLs.</li>
+        <li><strong>Use Private Browsing Modes:</strong><span>&nbsp;</span>Reduce
+          your online footprint.</li>
       </ul>
-      <h3>Email and Social Media Precautions</h3>
-      <ul>
-        <li><strong>Don't Open Attachments from Unknown Senders:</strong> These
+      <h3 style="color: rgb(51, 51, 51); font-family: Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">Email
+        and Social Media Precautions</h3>
+      <ul style="color: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+        <li><strong>Don't Open Attachments from Unknown Senders:</strong><span>&nbsp;</span>These
           could contain viruses or ransomware.</li>
-        <li><strong>Review Privacy Settings:</strong> Limit what others can see
-          on your social media profiles.</li>
-        <li><strong>Be Wary of "Too Good to Be True" Offers:</strong> Scams are
-          rampant on email and social platforms.</li>
-        <li><strong>Avoid Sharing Sensitive Information Publicly:</strong> Keep
+        <li><strong>Review Privacy Settings:</strong><span>&nbsp;</span>Limit
+          what others can see on your social media profiles.</li>
+        <li><strong>Be Wary of "Too Good to Be True" Offers:</strong><span>&nbsp;</span>Scams
+          are rampant on email and social platforms.</li>
+        <li><strong>Avoid Sharing Sensitive Information Publicly:</strong><span>&nbsp;</span>Keep
           personal and financial information private.</li>
       </ul>
+      <p><br>
+      </p>
+      <p><img src="https://i.imagesup.co/images2/160117f6104aee4687b963adcd5edb70a86fc305.jpg"
+
+          style="width: 414px; height: 278px;"></p>
     </section>
     <!-- פרסומת העליונה עכשיו מתחת ל-"Tips to Ensure Your PC Safety" -->
-    <div class="advertisement"> <img src="https://i.imagesup.co/images2/82314df3466cbe007e10fd35558b30baf4afb8f5.gif"
+    <div class="advertisement"><img src="https://i.imagesup.co/images2/82314df3466cbe007e10fd35558b30baf4afb8f5.gif"
 
-        style="width: 421px; height: 166px;"> </div>
+        style="width: 757px; height: 168px;"></div>
     <!-- פרסומת בצד שמאל -->
-    <div class="advertisement advertisement-left"> <img src="https://i.imagesup.co/images2/e98f746ddb017e7759eea20ddf11ca524ff990fd.gif"
-
-        style="width: 206px; height: 565px;"> </div>
+    <div class="advertisement advertisement-left"><img src="https://i.imagesup.co/images2/e98f746ddb017e7759eea20ddf11ca524ff990fd.gif"></div>
     <!-- פרסומת בצד ימין -->
-    <div class="advertisement advertisement-right"> <img src="https://i.imagesup.co/images2/e98f746ddb017e7759eea20ddf11ca524ff990fd.gif"
-
-        style="width: 206px; height: 565px;"> </div>
+    <div class="advertisement advertisement-right"><img src="https://i.imagesup.co/images2/e98f746ddb017e7759eea20ddf11ca524ff990fd.gif"></div>
     <!-- Footer -->
     <footer>
       <p><b>The website is provided as a service to the public. The site owners
